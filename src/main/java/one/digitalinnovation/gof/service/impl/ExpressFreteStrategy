@@ -1,0 +1,10 @@
+package one.digitalinnovation.gof.service.impl;
+
+import one.digitalinnovation.gof.service.FreteStrategy;
+
+public class ExpressFreteStrategy implements FreteStrategy {
+    @Override
+    public double calcularFrete(double peso) {
+        return peso * 2.0;
+    }
+}

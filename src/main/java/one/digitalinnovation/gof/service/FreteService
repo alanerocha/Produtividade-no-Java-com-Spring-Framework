@@ -1,0 +1,16 @@
+package one.digitalinnovation.gof.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FreteService {
+    private FreteStrategy freteStrategy;
+
+    public void setFreteStrategy(FreteStrategy freteStrategy) {
+        this.freteStrategy = freteStrategy;
+    }
+
+    public double calcularFrete(double peso) {
+        return freteStrategy.calcularFrete(peso);
+    }
+}
